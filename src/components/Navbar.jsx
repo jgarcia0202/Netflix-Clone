@@ -5,7 +5,6 @@ import { UserAuth } from '../context/AuthContext';
 const Navbar = () => {
   const { user, logOut } = UserAuth();
   const navigate = useNavigate();
-  // console.log(user.email)
 
   const handleLogout = async () => {
     try {
@@ -30,8 +29,7 @@ const Navbar = () => {
           </Link>
           <button
             onClick={handleLogout}
-            className='bg-red-600 px-6 py-2 rounded cursor-pointer text-white'
-          >
+            className='bg-red-600 px-6 py-2 rounded cursor-pointer text-white'>
             Logout
           </button>
         </div>
